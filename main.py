@@ -36,21 +36,18 @@ bg_label = tk.Label(root, image=bg_photo)
 bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 header = tk.Label(root, text="KEY GENERATION", font=("Arial", 20, "bold"), fg="white", bg="black")
-header.pack(side="top", fill="x", pady=20)
-
-inf_label = tk.Label(root, text="Введите число", fg="white", bg="yellow")
-header.pack(side="top", pady=20)
+header.pack(side="top", fill="x")
 
 hex_entry = tk.Entry(root, font=("Arial", 15), justify="center", width=10)
-hex_entry.pack(side="top", pady=20)
+hex_entry.pack(side="top")
 hex_entry.insert(0, "54CD1")
 
 gen_button = tk.Button(root, text="ГЕНЕРИРОВАТЬ", command=get_key, 
                        bg="green", fg="#F705E3", font=("Arial", 12, "bold"))
-gen_button.pack(side="top", pady=20)
+gen_button.pack(side="top", pady=50)
 
 result_entry = tk.Entry(root, font=("Arial", 20, "bold"), justify="center", width=25)
-result_entry.pack(side="top", pady=10)
+result_entry.pack(side="top")
 
 root.mainloop()
 
